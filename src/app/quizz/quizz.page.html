@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>quizz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="../assets/quiz1.png"><br>
+    <h1>Question and Answer</h1>
+    <div *ngFor = "let quiz of questions">
+      <a >
+      {{quiz.Name}}<br>
+     
+      </a>
+    </div>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="../assets/quiz1.png"><br>
+    <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input  [(ngModel)]="email"></ion-input></ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input [(ngModel)]="password"></ion-input>
+      </ion-item>
+        <ion-button (click)="login()" routerLink='/home'>Login</ion-button>
+        <ion-button (click)="resetPassword()">Forget password</ion-button>
+        <a routerLink='/register'>Click here to register</a>
+</ion-content>

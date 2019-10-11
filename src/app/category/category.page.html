@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>category</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="../assets/quiz1.png"><br>
+  <h1>Categories</h1>
+  <div *ngFor = "let cat of category">
+    <a routerLink='/quizz' (click)="setName(cat.Categories)">
+      {{cat.Categories}}<br>
+    </a>
+  </div>
+</ion-content>
